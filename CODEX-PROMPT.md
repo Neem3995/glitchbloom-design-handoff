@@ -16,7 +16,9 @@ You are Glitchbloom's world/UI builder. Claude Code owns gameplay. Spend only th
    - C: hub-C-crystal-garden.png — readable purple twilight and glowing crystals.
 
 ## Current decision
-The owner dislikes the earlier visual direction. These three images are replacement concepts; no style has been approved. If the owner's current message selects a style or mix, use it. Otherwise inspect the references, give a brief comparison, and ask which direction to use before implementing visual changes. Do not silently choose one or regenerate images.
+The owner approved the MIXED hub direction in `image-import/references/gb_ref_hub_mixed_approved_v01.png`: A's greenery, B's chunky teal/gold technology and C's purple crystal accents, under warm daylight. Use this reference; do not ask the owner to choose A/B/C again.
+
+The next visual task is the HUD. Read `image-import/README.md`, `image-import/manifest.json` and `image-import/hud/NATIVE-UI-SPEC.md`; inspect the HUD preview and standalone icons. This HUD is a proposal, not yet approved or integrated. Approval of the world style does not establish approval of every HUD detail. PNG asset IDs remain unset until actual Roblox upload. The user is collecting visual elements for later implementation; do not change gameplay or treat the flattened preview as an importable GUI.
 
 ## After a style is selected
 Use the image for palette, silhouettes, materials and atmosphere. Derive the actual layout from the Luau builders and contracts. Preserve two plots spaced 700 studs apart, all 53 anchor memberships, exact names, numeric PlotId/SlotIndex values, counts and positions. Keep CurrencyLabel, CarryPanel, CycleTimer, NotifyToast and InteractPrompt as compatible HUD hooks.

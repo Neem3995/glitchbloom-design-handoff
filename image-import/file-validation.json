@@ -1,0 +1,71 @@
+[
+  {
+    "file": "hud/icons/gb_ui_carry_v01.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "transparent_pixels": 837481,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      39,
+      1238,
+      1254
+    ]
+  },
+  {
+    "file": "hud/icons/gb_ui_interact_v01.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "transparent_pixels": 1078726,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      65,
+      19,
+      1222,
+      1192
+    ]
+  },
+  {
+    "file": "hud/icons/gb_ui_seed_v01.png",
+    "width": 1254,
+    "height": 1254,
+    "mode": "RGBA",
+    "transparent_pixels": 1088379,
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "alpha_bbox": [
+      0,
+      19,
+      1238,
+      1236
+    ]
+  },
+  {
+    "file": "references/gb_ref_hub_mixed_approved_v01.png",
+    "width": 1470,
+    "height": 1070,
+    "mode": "RGB",
+    "transparent_pixels": 0,
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  },
+  {
+    "file": "references/gb_ref_hud_mixed_proposal_v01.png",
+    "width": 1672,
+    "height": 941,
+    "mode": "RGB",
+    "transparent_pixels": 0,
+    "alpha_extrema": null,
+    "alpha_bbox": null
+  }
+]

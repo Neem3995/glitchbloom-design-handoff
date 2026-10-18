@@ -1,0 +1,66 @@
+{
+  "pack": "Glitchbloom mixed-style HUD v01",
+  "worldStyle": "approved mixed concept",
+  "assets": [
+    {
+      "file": "hud/icons/gb_ui_carry_v01.png",
+      "role": "roblox-ui-image",
+      "approval": "proposal-awaiting-review",
+      "hook": "CarryPanel",
+      "width": 1254,
+      "height": 1254,
+      "alphaVerified": true,
+      "assetId": null,
+      "uploaded": false,
+      "studioTested": false
+    },
+    {
+      "file": "hud/icons/gb_ui_interact_v01.png",
+      "role": "roblox-ui-image",
+      "approval": "proposal-awaiting-review",
+      "hook": "InteractPrompt",
+      "width": 1254,
+      "height": 1254,
+      "alphaVerified": true,
+      "assetId": null,
+      "uploaded": false,
+      "studioTested": false
+    },
+    {
+      "file": "hud/icons/gb_ui_seed_v01.png",
+      "role": "roblox-ui-image",
+      "approval": "proposal-awaiting-review",
+      "hook": "CurrencyLabel",
+      "width": 1254,
+      "height": 1254,
+      "alphaVerified": true,
+      "assetId": null,
+      "uploaded": false,
+      "studioTested": false
+    },
+    {
+      "file": "references/gb_ref_hub_mixed_approved_v01.png",
+      "role": "reference-only",
+      "approval": "approved-style-reference",
+      "hook": null,
+      "width": 1470,
+      "height": 1070,
+      "alphaVerified": false,
+      "assetId": null,
+      "uploaded": false,
+      "studioTested": false
+    },
+    {
+      "file": "references/gb_ref_hud_mixed_proposal_v01.png",
+      "role": "reference-only",
+      "approval": "proposal-awaiting-review",
+      "hook": null,
+      "width": 1672,
+      "height": 941,
+      "alphaVerified": false,
+      "assetId": null,
+      "uploaded": false,
+      "studioTested": false
+    }
+  ]
+}

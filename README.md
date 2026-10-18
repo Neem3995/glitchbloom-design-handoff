@@ -4,8 +4,15 @@
 
 Claude Design: read [READ-ME-FIRST.txt](READ-ME-FIRST.txt), then [PROMPTS.md](PROMPTS.md).
 
-## New visual concepts — selection pending
-The earlier visual style is not approved. These generated images explore replacements; none has been selected yet.
+## Approved direction and current assets
+The owner selected the **mixed hub concept**: bright greenery, chunky teal/gold technology, purple crystal accents and warm daylight.
+
+![Approved mixed hub](image-import/references/gb_ref_hub_mixed_approved_v01.png)
+
+Start with [image-import/](image-import/README.md) for consistently named assets, upload instructions and the manifest. The [HUD preview](image-import/references/gb_ref_hud_mixed_proposal_v01.png) and three transparent HUD icons are proposals awaiting review; they have not been imported into Roblox.
+
+## Earlier visual concepts — retained as references
+These three explorations led to the approved mixed direction.
 
 | A — Bright alien garden | B — Salvaged-tech garden | C — Crystal garden |
 | --- | --- | --- |
