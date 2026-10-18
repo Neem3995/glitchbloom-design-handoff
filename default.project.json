@@ -1,0 +1,19 @@
+{
+  "name": "Glitchbloom",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": { "$path": "src/shared" },
+    "ServerScriptService": { "$path": "src/server" },
+    "StarterPlayer": {
+      "StarterPlayerScripts": { "$path": "src/client" }
+    },
+    "ServerStorage": {
+      "Gate0Tests": { "$path": "tests/anchors" }
+    },
+    "Workspace": {
+      "$properties": { "StreamingEnabled": false },
+      "Baseplate": { "$className": "Part", "$properties": { "Transparency": 1, "CanCollide": false, "Anchored": true } },
+      "SpawnLocation": { "$className": "SpawnLocation", "$properties": { "Enabled": false, "Transparency": 1, "CanCollide": false, "Anchored": true } }
+    }
+  }
+}

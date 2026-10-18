@@ -1,0 +1,89 @@
+GLITCHBLOOM — CLAUDE DESIGN HANDOFF
+
+Read this first, then docs/CONTRACTS.md and the included Luau source.
+This package is a Gate 0 visual baseline from commit 18f3d3f. At export time,
+its contracts, WorldConfig, world builders and HUD still matched the local
+checkout. Separate Gate 1 gameplay work is in progress and is excluded.
+Repo: https://github.com/Neem3995/glitchbloom (PRIVATE; access is not assumed).
+The attached sources are sufficient; no repository search is necessary.
+
+CORRECT THE PROVISIONAL CANVAS
+There are exactly TWO plots, Plot_1 and Plot_2, separated by 700 studs along X.
+Remove bases A-D at 124 studs, four diagonal routes, and the north-rim portal.
+Hub construction origin: (0,0,-100); footprint: 110 x 80 studs.
+HubSpawn center: (0,0.15,-100), size (14,0.3,14).
+HubVendor center: (-32,2.5,-92), size (16,5,8).
+HubPlotPortal center: (32,0.15,-92), size (12,0.3,12).
+Plot construction origins: (-350,0,50) and (350,0,50).
+Each footprint: 160 x 140 studs; boundary volume: (160,28,140).
+PlotRoot is a Model whose PrimaryPart is PlotBoundary. Its reference pivot
+is therefore at Y=14, not the floor construction origin Y=0.
+
+Coordinates are Roblox world studs, Y up. For the overhead drawing, label
+-X left, +X right, -Z top, +Z bottom. If calling the top north, state this is
+a diagram convention. Do not infer a locked in-game compass direction.
+
+The main crosswalk is at Z=-36, from X=-359 to X=359, width 18.
+A central walkway connects hub center Z=-100 to crosswalk Z=-36 at X=0.
+Plot entry walkways run at X=-350 and X=350 from Z=-36 toward Z=50.
+All walkway top surfaces are Y=0. These are connected orthogonal paths,
+not four diagonal routes. Lamp-lined routes are decorative proposals,
+not current Gate 0 content; keep any proposed lamps clear of walking space.
+Do not label estimated walking distances/times as measured Studio results.
+
+ANCHOR REFERENCE
+Gate0-anchor-positions.csv lists all 53 tagged anchors with world centers,
+actual instance paths and attributes. Blank fields mean the attribute is absent.
+PlotId is numeric 1 or 2, not a string. SlotIndex is numeric and 1-based.
+Each plot has 25 tagged anchors, including the PlotRoot model:
+1 each: PlotRoot, PlotSpawn, PlotBoundary, StarterChest, GardenerHome,
+LootDrop, DeliveryPad, RaidApproach.
+8 PlantSlot; 4 WardSlot; 2 CameraMount; 3 GuardianPost.
+The three hub tags are HubSpawn, HubVendor, HubPlotPortal, each appearing once.
+The CSV is derived from the builders; the Luau source is authoritative.
+Use the Part sizes in WorldConfig. Preserve tag membership, counts, positions,
+attributes and names; present any relocation as a separate proposal only.
+
+HUD BASELINE
+ScreenGui: Players.LocalPlayer.PlayerGui.GlitchbloomHUD.
+Its five direct child TextLabels are the fixed integration hooks:
+CurrencyLabel, CarryPanel, CycleTimer, NotifyToast, InteractPrompt.
+Each currently uses GothamMedium, 16px text, wrapping, 10px rounded corners,
+10px left/right padding, and a maximum size of 420 x 64 pixels.
+Current dimensions and placement (UDim2 tuples are xScale,xOffset,yScale,yOffset):
+CurrencyLabel: size (0.42,0,0,48), position (0,12,0,12), anchor (0,0).
+CycleTimer: size (0.42,0,0,48), position (1,-12,0,12), anchor (1,0).
+NotifyToast: size (1,-24,0,48), position (0.5,0,0,70), anchor (0.5,0).
+CarryPanel: size (0.65,0,0,48), position (0.5,0,1,-130), anchor (0.5,1).
+InteractPrompt: size (1,-24,0,52), position (0.5,0,1,-72), anchor (0.5,1).
+These dimensions describe the tested placeholder, not a ban on proposing
+better responsive styling. Keep exact hook names and the integration hierarchy.
+
+Static texts are in Hud.client.luau. SEEDS is placeholder display copy, not
+an approved economy. CycleTimer says CYCLE / Preview, not a working timer.
+CarryPanel says CARRY / Empty; there is no approved six-item capacity in Gate 0.
+InteractPrompt is currently a TextLabel, not a functioning input button.
+Do not invent currency types, inventory limits, timer states or interaction logic.
+No image icons are required by this baseline. Use native shapes first; any
+proposed icon list must map to existing hooks and be explicitly optional.
+
+PALETTE BASELINE (RGB)
+Ground 16,38,35; Floor 25,66,58; Metal 30,48,53; Teal 66,208,178;
+Gold 224,183,96; World text 230,248,231.
+HUD background 13,35,35 at transparency 0.08; text 231,245,224;
+outline 102,167,141 at transparency 0.25.
+See Parts.luau, Hub.luau, Plot.luau and World.luau for actual geometry,
+SmoothPlastic/Neon materials, label behavior and atmosphere settings.
+
+DELIVERABLES
+1. Correct the existing overhead and player-eye concepts to this baseline.
+2. Complete landmark Part breakdowns and palette/material boards. Supply studs,
+   pivots, hierarchy, collision suggestions and decoration/anchor separation.
+3. Supply responsive HUD reference layouts and exact native-GUI styling specs.
+4. If PNG icons are actually produced, export individually with transparent
+   backgrounds, dimensions and a manifest. Keep text editable, outside images.
+5. Clearly label HTML/CSS as reference only. Do not claim FBX/glTF export or
+   Studio verification. Native-Part assembly specs are the accepted 3D handoff.
+
+Do not modify gameplay, add systems, or assume access to Studio. The owner
+will return the visual export to Codex for implementation and Studio checks.
