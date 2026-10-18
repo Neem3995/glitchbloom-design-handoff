@@ -1,6 +1,17 @@
-# Glitchbloom — Claude Design handoff
+# Glitchbloom — visual design handoff
 
-Design reference repository. Read [READ-ME-FIRST.txt](READ-ME-FIRST.txt), then [PROMPTS.md](PROMPTS.md).
+**Codex: start with [CODEX-PROMPT.md](CODEX-PROMPT.md).** Everything needed for the visual review is in this repository; no folder upload is required.
+
+Claude Design: read [READ-ME-FIRST.txt](READ-ME-FIRST.txt), then [PROMPTS.md](PROMPTS.md).
+
+## New visual concepts — selection pending
+The earlier visual style is not approved. These generated images explore replacements; none has been selected yet.
+
+| A — Bright alien garden | B — Salvaged-tech garden | C — Crystal garden |
+| --- | --- | --- |
+| ![Bright alien garden](reference/concepts/hub-A-bright-alien-garden.png) | ![Salvaged-tech garden](reference/concepts/hub-B-salvaged-tech-garden.png) | ![Crystal garden](reference/concepts/hub-C-crystal-garden.png) |
+
+Images are style references, not exact layouts, verified gameplay screenshots or importable 3D assets. Their generated scenery does not authorize extra plots, floating islands, changed paths or anchor movement. [Generation prompts](reference/concepts/hub-concept-prompts.txt).
 
 ## Source of truth
 - [World/UI contracts](docs/CONTRACTS.md)
